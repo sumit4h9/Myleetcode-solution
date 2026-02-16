@@ -8,16 +8,17 @@
 8 *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 9 * }
 10 */
-11class Solution {
-12    public ListNode reverseList(ListNode head) {
-13        if (head == null || head.next == null) {
-14            return head;
-15        }
-16        ListNode newHead = reverseList(head.next);
+11// class Solution {
+12//     public ListNode reverseList(ListNode head) {
+13//         if (head == null || head.next == null) {
+14//             return head;
+15//         }
+16//         ListNode newHead = reverseList(head.next);
 17        
-18        head.next.next = head;
-19        head.next = null;
+18//         head.next.next = head;
+19//         head.next = null;
 20
-21        return newHead;
-22    }
-23}
+21//         return newHead;
+22//     }
+23// }
+24
